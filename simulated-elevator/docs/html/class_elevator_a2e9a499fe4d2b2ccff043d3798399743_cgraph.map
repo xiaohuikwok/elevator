@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_request.html#a7199b71072973cac67be00225bd9ce5b" title="Request::getDeparture" alt="" coords="251,5,408,35"/>
+<area shape="rect" id="node5" href="$class_request.html#af8586495f2fd5dce9fc5690d47f59310" title="Request::getDestination" alt="" coords="247,59,412,88"/>
+<area shape="rect" id="node7" href="$class_request.html#af75b4fec08458a4fe539d679d87ac8c4" title="Request::getDirection" alt="" coords="253,112,405,141"/>
+<area shape="rect" id="node9" href="$class_request.html#a7a435c886ed19acb556dc2445a53bd37" title="Request::getDirectionToDeparture" alt="" coords="215,165,444,195"/>
+<area shape="rect" id="node11" href="$class_request.html#a78b24de8cdef27ff340b28d49d251720" title="Request::getLength" alt="" coords="260,219,399,248"/>
+<area shape="rect" id="node13" href="$class_elevator.html#abd54853d9aba7177792df167c0bb894c" title="Elevator::getPoleDepartureInCurrentDirection" alt="" coords="184,272,475,301"/>
+</map>

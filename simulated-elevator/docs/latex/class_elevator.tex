@@ -1,0 +1,529 @@
+\hypertarget{class_elevator}{
+\section{Elevator Class Reference}
+\label{class_elevator}\index{Elevator@{Elevator}}
+}
+
+
+{\ttfamily \#include $<$elevator.h$>$}
+
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_elevator_a688a7f343cc5d4ceec45feea140ccba2}{signalCanAcceptRequest} (int elevatorIndex)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_elevator_a1d3d0e6613a99a780dc2a14935ed47ec}{Elevator} (QWidget $\ast$parent=0, int index=-\/1)
+\item 
+int \hyperlink{class_elevator_aca5f48d0086a5791d6fa822c4efc4d96}{getID} ()
+\item 
+int \hyperlink{class_elevator_a2e9a499fe4d2b2ccff043d3798399743}{evaluate} (\hyperlink{class_request}{Request} $\ast$req)
+\item 
+bool \hyperlink{class_elevator_aaef88b9050a598bfc711e0f4a55711d0}{addRequest} (\hyperlink{class_request}{Request} $\ast$req)
+\item 
+int \hyperlink{class_elevator_a333ca5f86534823e1efda55e48c36abe}{getCurrentFloor} ()
+\item 
+bool \hyperlink{class_elevator_a64dc8a888c4ae8914a2ce640b3104c39}{isIdle} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_elevator_a457c6551bbec5edc5051c381ed8cb037}{
+static int \hyperlink{class_elevator_a457c6551bbec5edc5051c381ed8cb037}{indexSequence} = 0}
+\label{class_elevator_a457c6551bbec5edc5051c381ed8cb037}
+
+\begin{DoxyCompactList}\small\item\em Global \hyperlink{class_elevator}{Elevator} Count Variable (Used for generate default id) \end{DoxyCompactList}\item 
+\hypertarget{class_elevator_a0e992da73960fcb066c4216d48828348}{
+static const int \hyperlink{class_elevator_a0e992da73960fcb066c4216d48828348}{FLOOR\_\-NONE} = -\/1}
+\label{class_elevator_a0e992da73960fcb066c4216d48828348}
+
+\begin{DoxyCompactList}\small\item\em Value for a floor number hich means unavaliable. \end{DoxyCompactList}\item 
+\hypertarget{class_elevator_aea037729441aae59042ce4f5b9b3adf7}{
+static const int \hyperlink{class_elevator_aea037729441aae59042ce4f5b9b3adf7}{REQUEST\_\-UNACCEPTABLE} = -\/1}
+\label{class_elevator_aea037729441aae59042ce4f5b9b3adf7}
+
+\begin{DoxyCompactList}\small\item\em Cost for a request that can't be accept by this elevator anyway. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_elevator_a1c7640e845ad36870c764f87e53d21e2}{animeDoorOpenFinished} ()
+\item 
+void \hyperlink{class_elevator_ad0d2554d24ea14d07afa2a7e5d00725a}{animePassengersFinished} ()
+\item 
+void \hyperlink{class_elevator_a5d4ecef44a3e87b14b5ce8de10008fdd}{nextFloor} ()
+\item 
+int \hyperlink{class_elevator_abd54853d9aba7177792df167c0bb894c}{getPoleDepartureInCurrentDirection} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_elevator_ac9f33c34d59902f14c72bc86c6c3edb7}{action} (\hyperlink{class_request_a31872cb7919df688dc6866ea607b9d9d}{Request::DIRECTION} \hyperlink{class_elevator_a0e5685fa3ebcfb3c5e4810adc6c5388a}{direction}=Request::DIRECTION\_\-NONE)
+\item 
+void \hyperlink{class_elevator_a92dbf1fd3ff98c4656ee428b43a35a4c}{createAnimations} ()
+\item 
+void \hyperlink{class_elevator_aabecded393aa00b30a1f2071b0ae1cdd}{createAnimationMove} ()
+\item 
+void \hyperlink{class_elevator_a49c56159bb74facd0661c40f621b886f}{createAnimationDoor} ()
+\item 
+void \hyperlink{class_elevator_ad854f6f6fa0d4c8b6066edc1282fced3}{setCurDirection} (\hyperlink{class_request_a31872cb7919df688dc6866ea607b9d9d}{Request::DIRECTION} curDir)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_elevator_a008833dba4a008951035b3ab1ca9231a}{
+Ui::Elevator $\ast$ \hyperlink{class_elevator_a008833dba4a008951035b3ab1ca9231a}{ui}}
+\label{class_elevator_a008833dba4a008951035b3ab1ca9231a}
+
+\begin{DoxyCompactList}\small\item\em Qt UI object of \hyperlink{class_elevator}{Elevator}. \end{DoxyCompactList}\item 
+\hypertarget{class_elevator_aa31e06e205c1c29028deafa7ecff4ae8}{
+int \hyperlink{class_elevator_aa31e06e205c1c29028deafa7ecff4ae8}{id}}
+\label{class_elevator_aa31e06e205c1c29028deafa7ecff4ae8}
+
+\begin{DoxyCompactList}\small\item\em ID(Index) of the current elevator. \end{DoxyCompactList}\item 
+\hypertarget{class_elevator_a07597b24e92d6a74db2c97035edd225e}{
+int \hyperlink{class_elevator_a07597b24e92d6a74db2c97035edd225e}{curFloor}}
+\label{class_elevator_a07597b24e92d6a74db2c97035edd225e}
+
+\begin{DoxyCompactList}\small\item\em Floornumber the \hyperlink{class_elevator}{Elevator} is now. \end{DoxyCompactList}\item 
+\hypertarget{class_elevator_a29320516a530002a9156fcaf6b006a91}{
+int \hyperlink{class_elevator_a29320516a530002a9156fcaf6b006a91}{inPassengerCount}}
+\label{class_elevator_a29320516a530002a9156fcaf6b006a91}
+
+\begin{DoxyCompactList}\small\item\em Number of people come into the \hyperlink{class_elevator}{Elevator} after door opened. \end{DoxyCompactList}\item 
+\hypertarget{class_elevator_a2ddde08d62ca990aa07160e45f3eef0e}{
+int \hyperlink{class_elevator_a2ddde08d62ca990aa07160e45f3eef0e}{outPassengerCount}}
+\label{class_elevator_a2ddde08d62ca990aa07160e45f3eef0e}
+
+\begin{DoxyCompactList}\small\item\em Number of people go outof the \hyperlink{class_elevator}{Elevator} after door opened. \end{DoxyCompactList}\item 
+\hypertarget{class_elevator_ad650e2c1962ac39ee93b33b52d30c824}{
+int \hyperlink{class_elevator_ad650e2c1962ac39ee93b33b52d30c824}{passengerCount}}
+\label{class_elevator_ad650e2c1962ac39ee93b33b52d30c824}
+
+\begin{DoxyCompactList}\small\item\em Number of people in the \hyperlink{class_elevator}{Elevator}. \end{DoxyCompactList}\item 
+\hypertarget{class_elevator_a700abab6b67b912087607a94fa194110}{
+\hyperlink{class_request_a31872cb7919df688dc6866ea607b9d9d}{Request::DIRECTION} \hyperlink{class_elevator_a700abab6b67b912087607a94fa194110}{curDirection}}
+\label{class_elevator_a700abab6b67b912087607a94fa194110}
+
+\begin{DoxyCompactList}\small\item\em Current running DIRECTION. \end{DoxyCompactList}\item 
+\hypertarget{class_elevator_a0e5685fa3ebcfb3c5e4810adc6c5388a}{
+\hyperlink{class_request_a31872cb7919df688dc6866ea607b9d9d}{Request::DIRECTION} \hyperlink{class_elevator_a0e5685fa3ebcfb3c5e4810adc6c5388a}{direction}}
+\label{class_elevator_a0e5685fa3ebcfb3c5e4810adc6c5388a}
+
+\begin{DoxyCompactList}\small\item\em DIRECTION of the first request. \end{DoxyCompactList}\item 
+\hypertarget{class_elevator_ab64bb0f856260d8bac401c96618ccb36}{
+QList$<$ \hyperlink{class_request}{Request} $\ast$ $>$ \hyperlink{class_elevator_ab64bb0f856260d8bac401c96618ccb36}{requests}}
+\label{class_elevator_ab64bb0f856260d8bac401c96618ccb36}
+
+\begin{DoxyCompactList}\small\item\em List of the tasks to do. \end{DoxyCompactList}\item 
+\hypertarget{class_elevator_a5d2c79ac63afc0891c97ad4e65cac2a9}{
+QSequentialAnimationGroup $\ast$ \hyperlink{class_elevator_a5d2c79ac63afc0891c97ad4e65cac2a9}{animeDoorOpen}}
+\label{class_elevator_a5d2c79ac63afc0891c97ad4e65cac2a9}
+
+\begin{DoxyCompactList}\small\item\em Animation object: Open the door of the \hyperlink{class_elevator}{Elevator}. \end{DoxyCompactList}\item 
+\hypertarget{class_elevator_ac46d5a0a1fb9094138d771cfb1d5e632}{
+QParallelAnimationGroup $\ast$ \hyperlink{class_elevator_ac46d5a0a1fb9094138d771cfb1d5e632}{animePassengers}}
+\label{class_elevator_ac46d5a0a1fb9094138d771cfb1d5e632}
+
+\begin{DoxyCompactList}\small\item\em Animation object: People come in and out of the \hyperlink{class_elevator}{Elevator}. \end{DoxyCompactList}\item 
+\hypertarget{class_elevator_a34b7927963bedf4ba7727e83e53706cb}{
+QSequentialAnimationGroup $\ast$ \hyperlink{class_elevator_a34b7927963bedf4ba7727e83e53706cb}{animeDoorClose}}
+\label{class_elevator_a34b7927963bedf4ba7727e83e53706cb}
+
+\begin{DoxyCompactList}\small\item\em Animation object: Close the door of the \hyperlink{class_elevator}{Elevator}. \end{DoxyCompactList}\item 
+\hypertarget{class_elevator_a3fece615cc6c5f0123d4731021ae683a}{
+QParallelAnimationGroup $\ast$ \hyperlink{class_elevator_a3fece615cc6c5f0123d4731021ae683a}{animeUpward}}
+\label{class_elevator_a3fece615cc6c5f0123d4731021ae683a}
+
+\begin{DoxyCompactList}\small\item\em Animation object: Move the \hyperlink{class_elevator}{Elevator} up. \end{DoxyCompactList}\item 
+\hypertarget{class_elevator_af14b33b5234414d0c90a8328f9b0fffa}{
+QParallelAnimationGroup $\ast$ \hyperlink{class_elevator_af14b33b5234414d0c90a8328f9b0fffa}{animeDownward}}
+\label{class_elevator_af14b33b5234414d0c90a8328f9b0fffa}
+
+\begin{DoxyCompactList}\small\item\em Animation object: Move the \hyperlink{class_elevator}{Elevator} down. \end{DoxyCompactList}\item 
+\hypertarget{class_elevator_a1f9815d1977acf5312fe26a6311e0818}{
+QParallelAnimationGroup $\ast$ \hyperlink{class_elevator_a1f9815d1977acf5312fe26a6311e0818}{animeGrpParallel}}
+\label{class_elevator_a1f9815d1977acf5312fe26a6311e0818}
+
+\begin{DoxyCompactList}\small\item\em Animation object: Temporary object. \end{DoxyCompactList}\item 
+\hypertarget{class_elevator_a14ba7f0b2e17e3e1a6dcae034ba914e6}{
+QSequentialAnimationGroup $\ast$ \hyperlink{class_elevator_a14ba7f0b2e17e3e1a6dcae034ba914e6}{animeGrpSequential}}
+\label{class_elevator_a14ba7f0b2e17e3e1a6dcae034ba914e6}
+
+\begin{DoxyCompactList}\small\item\em Animation object: Temporary object. \end{DoxyCompactList}\item 
+\hypertarget{class_elevator_a32e33134fc75b79f3ca1a5fbe08b8e12}{
+QPropertyAnimation $\ast$ \hyperlink{class_elevator_a32e33134fc75b79f3ca1a5fbe08b8e12}{anime}}
+\label{class_elevator_a32e33134fc75b79f3ca1a5fbe08b8e12}
+
+\begin{DoxyCompactList}\small\item\em Animation object: Temporary object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_elevator}{Elevator} Class Run according to a \hyperlink{class_request}{Request} List, Carry passengers and most important, play animation 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_elevator_a1d3d0e6613a99a780dc2a14935ed47ec}{
+\index{Elevator@{Elevator}!Elevator@{Elevator}}
+\index{Elevator@{Elevator}!Elevator@{Elevator}}
+\subsubsection[{Elevator}]{\setlength{\rightskip}{0pt plus 5cm}Elevator::Elevator (
+\begin{DoxyParamCaption}
+\item[{QWidget $\ast$}]{parent = {\ttfamily 0}, }
+\item[{int}]{index = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, explicit\mbox{]}}}}
+\label{class_elevator_a1d3d0e6613a99a780dc2a14935ed47ec}
+Construct an \hyperlink{class_elevator}{Elevator}. If the index in param list not specificed sequential value will be used. 
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_elevator_a1d3d0e6613a99a780dc2a14935ed47ec_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_elevator_ac9f33c34d59902f14c72bc86c6c3edb7}{
+\index{Elevator@{Elevator}!action@{action}}
+\index{action@{action}!Elevator@{Elevator}}
+\subsubsection[{action}]{\setlength{\rightskip}{0pt plus 5cm}void Elevator::action (
+\begin{DoxyParamCaption}
+\item[{{\bf Request::DIRECTION}}]{direction = {\ttfamily Request::DIRECTION\_\-NONE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private\mbox{]}}}}
+\label{class_elevator_ac9f33c34d59902f14c72bc86c6c3edb7}
+Play animations with this function 
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_elevator_ac9f33c34d59902f14c72bc86c6c3edb7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_elevator_aaef88b9050a598bfc711e0f4a55711d0}{
+\index{Elevator@{Elevator}!addRequest@{addRequest}}
+\index{addRequest@{addRequest}!Elevator@{Elevator}}
+\subsubsection[{addRequest}]{\setlength{\rightskip}{0pt plus 5cm}bool Elevator::addRequest (
+\begin{DoxyParamCaption}
+\item[{{\bf Request} $\ast$}]{req}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_elevator_aaef88b9050a598bfc711e0f4a55711d0}
+Insert a request to the working list of the \hyperlink{class_elevator}{Elevator}. \par
+ Out of the trust to \hyperlink{class_dispatcher}{Dispatcher}, addRequest will not check the avaliability of a request! 
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_elevator_aaef88b9050a598bfc711e0f4a55711d0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_elevator_aaef88b9050a598bfc711e0f4a55711d0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_elevator_a1c7640e845ad36870c764f87e53d21e2}{
+\index{Elevator@{Elevator}!animeDoorOpenFinished@{animeDoorOpenFinished}}
+\index{animeDoorOpenFinished@{animeDoorOpenFinished}!Elevator@{Elevator}}
+\subsubsection[{animeDoorOpenFinished}]{\setlength{\rightskip}{0pt plus 5cm}void Elevator::animeDoorOpenFinished (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private, slot\mbox{]}}}}
+\label{class_elevator_a1c7640e845ad36870c764f87e53d21e2}
+Door has opened and show the animation target, then continue the animation 
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_elevator_a1c7640e845ad36870c764f87e53d21e2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_elevator_ad0d2554d24ea14d07afa2a7e5d00725a}{
+\index{Elevator@{Elevator}!animePassengersFinished@{animePassengersFinished}}
+\index{animePassengersFinished@{animePassengersFinished}!Elevator@{Elevator}}
+\subsubsection[{animePassengersFinished}]{\setlength{\rightskip}{0pt plus 5cm}void Elevator::animePassengersFinished (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private, slot\mbox{]}}}}
+\label{class_elevator_ad0d2554d24ea14d07afa2a7e5d00725a}
+Dooe is going to close, hide the animation target, then play the door-\/close animation 
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_elevator_ad0d2554d24ea14d07afa2a7e5d00725a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_elevator_a49c56159bb74facd0661c40f621b886f}{
+\index{Elevator@{Elevator}!createAnimationDoor@{createAnimationDoor}}
+\index{createAnimationDoor@{createAnimationDoor}!Elevator@{Elevator}}
+\subsubsection[{createAnimationDoor}]{\setlength{\rightskip}{0pt plus 5cm}void Elevator::createAnimationDoor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private\mbox{]}}}}
+\label{class_elevator_a49c56159bb74facd0661c40f621b886f}
+Create animations to open door, move passengers and close door 
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_elevator_a49c56159bb74facd0661c40f621b886f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_elevator_aabecded393aa00b30a1f2071b0ae1cdd}{
+\index{Elevator@{Elevator}!createAnimationMove@{createAnimationMove}}
+\index{createAnimationMove@{createAnimationMove}!Elevator@{Elevator}}
+\subsubsection[{createAnimationMove}]{\setlength{\rightskip}{0pt plus 5cm}void Elevator::createAnimationMove (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private\mbox{]}}}}
+\label{class_elevator_aabecded393aa00b30a1f2071b0ae1cdd}
+Create animations to move elevator up and down 
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_elevator_aabecded393aa00b30a1f2071b0ae1cdd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_elevator_a92dbf1fd3ff98c4656ee428b43a35a4c}{
+\index{Elevator@{Elevator}!createAnimations@{createAnimations}}
+\index{createAnimations@{createAnimations}!Elevator@{Elevator}}
+\subsubsection[{createAnimations}]{\setlength{\rightskip}{0pt plus 5cm}void Elevator::createAnimations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private\mbox{]}}}}
+\label{class_elevator_a92dbf1fd3ff98c4656ee428b43a35a4c}
+Create and initialize the animations 
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_elevator_a92dbf1fd3ff98c4656ee428b43a35a4c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elevator_a92dbf1fd3ff98c4656ee428b43a35a4c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_elevator_a2e9a499fe4d2b2ccff043d3798399743}{
+\index{Elevator@{Elevator}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!Elevator@{Elevator}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}int Elevator::evaluate (
+\begin{DoxyParamCaption}
+\item[{{\bf Request} $\ast$}]{req}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_elevator_a2e9a499fe4d2b2ccff043d3798399743}
+Evaluate whether a request can be accept by the elevator. If can, the function will return a int value representing the time that will cost to have the passenger arrived. If can't, REQUEST\_\-UNACCEPTABLE will be returned. 
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_elevator_a2e9a499fe4d2b2ccff043d3798399743_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_elevator_a2e9a499fe4d2b2ccff043d3798399743_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_elevator_a333ca5f86534823e1efda55e48c36abe}{
+\index{Elevator@{Elevator}!getCurrentFloor@{getCurrentFloor}}
+\index{getCurrentFloor@{getCurrentFloor}!Elevator@{Elevator}}
+\subsubsection[{getCurrentFloor}]{\setlength{\rightskip}{0pt plus 5cm}int Elevator::getCurrentFloor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_elevator_a333ca5f86534823e1efda55e48c36abe}
+Return the floor number \hypertarget{class_elevator_aca5f48d0086a5791d6fa822c4efc4d96}{
+\index{Elevator@{Elevator}!getID@{getID}}
+\index{getID@{getID}!Elevator@{Elevator}}
+\subsubsection[{getID}]{\setlength{\rightskip}{0pt plus 5cm}int Elevator::getID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_elevator_aca5f48d0086a5791d6fa822c4efc4d96}
+Return the ID(Index) of this \hyperlink{class_elevator}{Elevator} 
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_elevator_aca5f48d0086a5791d6fa822c4efc4d96_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_elevator_abd54853d9aba7177792df167c0bb894c}{
+\index{Elevator@{Elevator}!getPoleDepartureInCurrentDirection@{getPoleDepartureInCurrentDirection}}
+\index{getPoleDepartureInCurrentDirection@{getPoleDepartureInCurrentDirection}!Elevator@{Elevator}}
+\subsubsection[{getPoleDepartureInCurrentDirection}]{\setlength{\rightskip}{0pt plus 5cm}int Elevator::getPoleDepartureInCurrentDirection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private, slot\mbox{]}}}}
+\label{class_elevator_abd54853d9aba7177792df167c0bb894c}
+Get the pole value of the floor the \hyperlink{class_elevator}{Elevator} can arrived to take passengers along the current direction. 
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_elevator_abd54853d9aba7177792df167c0bb894c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_elevator_a64dc8a888c4ae8914a2ce640b3104c39}{
+\index{Elevator@{Elevator}!isIdle@{isIdle}}
+\index{isIdle@{isIdle}!Elevator@{Elevator}}
+\subsubsection[{isIdle}]{\setlength{\rightskip}{0pt plus 5cm}bool Elevator::isIdle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_elevator_a64dc8a888c4ae8914a2ce640b3104c39}
+Return whether the elevator is idle 
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_elevator_a64dc8a888c4ae8914a2ce640b3104c39_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_elevator_a5d4ecef44a3e87b14b5ce8de10008fdd}{
+\index{Elevator@{Elevator}!nextFloor@{nextFloor}}
+\index{nextFloor@{nextFloor}!Elevator@{Elevator}}
+\subsubsection[{nextFloor}]{\setlength{\rightskip}{0pt plus 5cm}void Elevator::nextFloor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private, slot\mbox{]}}}}
+\label{class_elevator_a5d4ecef44a3e87b14b5ce8de10008fdd}
+Core driver function for the running of the elevator. \par
+ Control the curFloor, Open of the door, Passengers, Move of the \hyperlink{class_elevator}{Elevator}, Task List. 
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=392pt]{class_elevator_a5d4ecef44a3e87b14b5ce8de10008fdd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_elevator_a5d4ecef44a3e87b14b5ce8de10008fdd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_elevator_ad854f6f6fa0d4c8b6066edc1282fced3}{
+\index{Elevator@{Elevator}!setCurDirection@{setCurDirection}}
+\index{setCurDirection@{setCurDirection}!Elevator@{Elevator}}
+\subsubsection[{setCurDirection}]{\setlength{\rightskip}{0pt plus 5cm}void Elevator::setCurDirection (
+\begin{DoxyParamCaption}
+\item[{{\bf Request::DIRECTION}}]{curDir}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private\mbox{]}}}}
+\label{class_elevator_ad854f6f6fa0d4c8b6066edc1282fced3}
+Set the current elevator direction to the given direction 
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_elevator_ad854f6f6fa0d4c8b6066edc1282fced3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_elevator_a688a7f343cc5d4ceec45feea140ccba2}{
+\index{Elevator@{Elevator}!signalCanAcceptRequest@{signalCanAcceptRequest}}
+\index{signalCanAcceptRequest@{signalCanAcceptRequest}!Elevator@{Elevator}}
+\subsubsection[{signalCanAcceptRequest}]{\setlength{\rightskip}{0pt plus 5cm}void Elevator::signalCanAcceptRequest (
+\begin{DoxyParamCaption}
+\item[{int}]{elevatorIndex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}signal\mbox{]}}}}
+\label{class_elevator_a688a7f343cc5d4ceec45feea140ccba2}
+Signal sent when the elevator is idle or the direction of the elevator changed. 
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_elevator_a688a7f343cc5d4ceec45feea140ccba2_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+elevator.h\item 
+main.cpp\end{DoxyCompactItemize}

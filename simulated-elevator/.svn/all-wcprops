@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 22
+/svn/!svn/ver/12/trunk
+END
+mainwindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/12/trunk/mainwindow.h
+END
+simulated-elevator.pro
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/8/trunk/simulated-elevator.pro
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/5/trunk/main.cpp
+END
+elevator.h
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/11/trunk/elevator.h
+END
+test.sh
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/11/trunk/test.sh
+END
+mainwindow.ui
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/12/trunk/mainwindow.ui
+END
+receiver.h
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/8/trunk/receiver.h
+END
+dispatcher.h
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/9/trunk/dispatcher.h
+END
+elevator.ui
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/11/trunk/elevator.ui
+END
+res.qrc
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/11/trunk/res.qrc
+END
+request.h
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/9/trunk/request.h
+END

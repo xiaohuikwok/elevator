@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_elevator.html#a2e9a499fe4d2b2ccff043d3798399743" title="Elevator::evaluate" alt="" coords="221,7,352,36"/>
+<area shape="rect" id="node7" href="$class_dispatcher.html#a5fd444604d8eadaafac5791f9947f021" title="Dispatcher::requestReceived" alt="" coords="680,59,877,88"/>
+<area shape="rect" id="node13" href="$class_receiver.html#a48b94424274f0d0fc2a3bbee87aaa25c" title="Receiver::readClient" alt="" coords="213,111,360,140"/>
+<area shape="rect" id="node5" href="$class_dispatcher.html#a5472cf1335843f5fa4655519b0e0bd94" title="Dispatcher::dispatchRequestPool" alt="" coords="409,7,631,36"/>
+<area shape="rect" id="node9" href="$class_dispatcher.html#a95437a6831a0f727a64d8490cf65a49f" title="Dispatcher::takeInControl" alt="" coords="692,5,865,35"/>
+<area shape="rect" id="node11" href="$class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db" title="MainWindow::MainWindow" alt="" coords="925,5,1112,35"/>
+<area shape="rect" id="node15" href="$class_receiver.html#a4e4b7449e28362cdfeb05c349f6d1888" title="Receiver::incomingConnection" alt="" coords="417,111,623,140"/>
+</map>

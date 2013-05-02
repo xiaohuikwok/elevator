@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_elevator.html#a5d4ecef44a3e87b14b5ce8de10008fdd" title="Elevator::nextFloor" alt="" coords="169,59,303,88"/>
+<area shape="rect" id="node5" href="$class_elevator.html#aaef88b9050a598bfc711e0f4a55711d0" title="Elevator::addRequest" alt="" coords="368,32,520,61"/>
+<area shape="rect" id="node15" href="$class_elevator.html#a92dbf1fd3ff98c4656ee428b43a35a4c" title="Elevator::createAnimations" alt="" coords="353,85,535,115"/>
+<area shape="rect" id="node7" href="$class_dispatcher.html#a5472cf1335843f5fa4655519b0e0bd94" title="Dispatcher::dispatchRequestPool" alt="" coords="585,32,807,61"/>
+<area shape="rect" id="node9" href="$class_dispatcher.html#a5fd444604d8eadaafac5791f9947f021" title="Dispatcher::requestReceived" alt="" coords="856,5,1053,35"/>
+<area shape="rect" id="node11" href="$class_dispatcher.html#a95437a6831a0f727a64d8490cf65a49f" title="Dispatcher::takeInControl" alt="" coords="868,59,1041,88"/>
+<area shape="rect" id="node13" href="$class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db" title="MainWindow::MainWindow" alt="" coords="1101,59,1288,88"/>
+<area shape="rect" id="node17" href="$class_elevator.html#a1d3d0e6613a99a780dc2a14935ed47ec" title="Elevator::Elevator" alt="" coords="632,85,760,115"/>
+</map>

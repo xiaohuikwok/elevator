@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/image">
+        <file alias="ceil">images/elevator-ceil.png</file>
+        <file alias="ldoor">images/elevator-door-left.png</file>
+        <file alias="lmask">images/elevator-door-mask-left.png</file>
+        <file alias="rmask">images/elevator-door-mask-right.png</file>
+        <file alias="frame">images/elevator-frame.png</file>
+        <file alias="left-back-line">images/elevator-line-lb.png</file>
+        <file alias="left-front-line">images/elevator-line-lf.png</file>
+        <file alias="right-back-line">images/elevator-line-rb.png</file>
+        <file alias="right-front-line">images/elevator-line-rf.png</file>
+        <file alias="rdoor">images/elevator-door-right.png</file>
+        <file alias="stickman">images/luggage-stickman.png</file>
+        <file alias="upward">images/elevator-up.png</file>
+        <file alias="downward">images/elevator-down.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,222 @@
+\hypertarget{class_request}{
+\section{Request Class Reference}
+\label{class_request}\index{Request@{Request}}
+}
+
+
+{\ttfamily \#include $<$request.h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_request_a31872cb7919df688dc6866ea607b9d9d}{DIRECTION} \{ {\bfseries DIRECTION\_\-UP}, 
+{\bfseries DIRECTION\_\-DOWN}, 
+{\bfseries DIRECTION\_\-NONE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_request_a65d1a250d302018d1211fbdb2b8e0345}{Request} (int f, int t)
+\item 
+void \hyperlink{class_request_a76a1f5a44df4120828d34a90fbcec13e}{unsetDeparture} ()
+\item 
+void \hyperlink{class_request_addbd9fdcd5e5a0291c89aad38f6c8416}{unsetDestination} ()
+\item 
+int \hyperlink{class_request_a7199b71072973cac67be00225bd9ce5b}{getDeparture} ()
+\item 
+int \hyperlink{class_request_af8586495f2fd5dce9fc5690d47f59310}{getDestination} ()
+\item 
+int \hyperlink{class_request_a78b24de8cdef27ff340b28d49d251720}{getLength} ()
+\item 
+\hyperlink{class_request_a31872cb7919df688dc6866ea607b9d9d}{DIRECTION} \hyperlink{class_request_af75b4fec08458a4fe539d679d87ac8c4}{getDirection} ()
+\item 
+\hyperlink{class_request_a31872cb7919df688dc6866ea607b9d9d}{DIRECTION} \hyperlink{class_request_a7a435c886ed19acb556dc2445a53bd37}{getDirectionToDeparture} (int floor)
+\item 
+\hyperlink{class_request_a31872cb7919df688dc6866ea607b9d9d}{DIRECTION} \hyperlink{class_request_aeae53642527adaf40498ec5b05921ca0}{getDirectionToDestination} (int floor)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{class_request_a9bf9e694beed6b73dd9eaf3f3a73708b}{FLOOR\_\-NONE} = -\/1
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_request_a485c04f740b2b104773e7a562490daa9}{
+int \hyperlink{class_request_a485c04f740b2b104773e7a562490daa9}{departure}}
+\label{class_request_a485c04f740b2b104773e7a562490daa9}
+
+\begin{DoxyCompactList}\small\item\em Variable to store the departure floor. \end{DoxyCompactList}\item 
+\hypertarget{class_request_a4f515d80c8c978b213af816b54598497}{
+int \hyperlink{class_request_a4f515d80c8c978b213af816b54598497}{destination}}
+\label{class_request_a4f515d80c8c978b213af816b54598497}
+
+\begin{DoxyCompactList}\small\item\em Variable to store the destination floor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_request}{Request} Class A \hyperlink{class_request}{Request} submitted by the passenger with where the passenger depart and where to arrive 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_request_a31872cb7919df688dc6866ea607b9d9d}{
+\index{Request@{Request}!DIRECTION@{DIRECTION}}
+\index{DIRECTION@{DIRECTION}!Request@{Request}}
+\subsubsection[{DIRECTION}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Request::DIRECTION}}}
+\label{class_request_a31872cb7919df688dc6866ea607b9d9d}
+Directions which the elevator will go 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_request_a65d1a250d302018d1211fbdb2b8e0345}{
+\index{Request@{Request}!Request@{Request}}
+\index{Request@{Request}!Request@{Request}}
+\subsubsection[{Request}]{\setlength{\rightskip}{0pt plus 5cm}Request::Request (
+\begin{DoxyParamCaption}
+\item[{int}]{f, }
+\item[{int}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_request_a65d1a250d302018d1211fbdb2b8e0345}
+Construct a \hyperlink{class_request}{Request} Class with the 'from' and 'to' param 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_request_a7199b71072973cac67be00225bd9ce5b}{
+\index{Request@{Request}!getDeparture@{getDeparture}}
+\index{getDeparture@{getDeparture}!Request@{Request}}
+\subsubsection[{getDeparture}]{\setlength{\rightskip}{0pt plus 5cm}int Request::getDeparture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_request_a7199b71072973cac67be00225bd9ce5b}
+Get the Departure floor from 1 to +INF and FLOOR\_\-NONE. 
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_request_a7199b71072973cac67be00225bd9ce5b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_request_af8586495f2fd5dce9fc5690d47f59310}{
+\index{Request@{Request}!getDestination@{getDestination}}
+\index{getDestination@{getDestination}!Request@{Request}}
+\subsubsection[{getDestination}]{\setlength{\rightskip}{0pt plus 5cm}int Request::getDestination (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_request_af8586495f2fd5dce9fc5690d47f59310}
+Get the Destination floor from 1 to +INF and FLOOR\_\-NONE. 
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_request_af8586495f2fd5dce9fc5690d47f59310_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_request_af75b4fec08458a4fe539d679d87ac8c4}{
+\index{Request@{Request}!getDirection@{getDirection}}
+\index{getDirection@{getDirection}!Request@{Request}}
+\subsubsection[{getDirection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DIRECTION} Request::getDirection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_request_af75b4fec08458a4fe539d679d87ac8c4}
+Get the the DIRECTION from departure floor to destiination floor. 
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_request_af75b4fec08458a4fe539d679d87ac8c4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_request_a7a435c886ed19acb556dc2445a53bd37}{
+\index{Request@{Request}!getDirectionToDeparture@{getDirectionToDeparture}}
+\index{getDirectionToDeparture@{getDirectionToDeparture}!Request@{Request}}
+\subsubsection[{getDirectionToDeparture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DIRECTION} Request::getDirectionToDeparture (
+\begin{DoxyParamCaption}
+\item[{int}]{floor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_request_a7a435c886ed19acb556dc2445a53bd37}
+Get the the DIRECTION from departure floor to the floor passed. 
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_request_a7a435c886ed19acb556dc2445a53bd37_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_request_aeae53642527adaf40498ec5b05921ca0}{
+\index{Request@{Request}!getDirectionToDestination@{getDirectionToDestination}}
+\index{getDirectionToDestination@{getDirectionToDestination}!Request@{Request}}
+\subsubsection[{getDirectionToDestination}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DIRECTION} Request::getDirectionToDestination (
+\begin{DoxyParamCaption}
+\item[{int}]{floor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_request_aeae53642527adaf40498ec5b05921ca0}
+Get the the DIRECTION from destination floor to the floor passed. \hypertarget{class_request_a78b24de8cdef27ff340b28d49d251720}{
+\index{Request@{Request}!getLength@{getLength}}
+\index{getLength@{getLength}!Request@{Request}}
+\subsubsection[{getLength}]{\setlength{\rightskip}{0pt plus 5cm}int Request::getLength (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_request_a78b24de8cdef27ff340b28d49d251720}
+Get the the length(floor count) from departure floor to destiination floor. 
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_request_a78b24de8cdef27ff340b28d49d251720_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_request_a76a1f5a44df4120828d34a90fbcec13e}{
+\index{Request@{Request}!unsetDeparture@{unsetDeparture}}
+\index{unsetDeparture@{unsetDeparture}!Request@{Request}}
+\subsubsection[{unsetDeparture}]{\setlength{\rightskip}{0pt plus 5cm}void Request::unsetDeparture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_request_a76a1f5a44df4120828d34a90fbcec13e}
+Mark the departure floor of the \hyperlink{class_request}{Request} to FLOOR\_\-NONE, this usually means that the departure floor of the \hyperlink{class_request}{Request} has been arrived. \hypertarget{class_request_addbd9fdcd5e5a0291c89aad38f6c8416}{
+\index{Request@{Request}!unsetDestination@{unsetDestination}}
+\index{unsetDestination@{unsetDestination}!Request@{Request}}
+\subsubsection[{unsetDestination}]{\setlength{\rightskip}{0pt plus 5cm}void Request::unsetDestination (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_request_addbd9fdcd5e5a0291c89aad38f6c8416}
+Mark the destination floor of the \hyperlink{class_request}{Request} to FLOOR\_\-NONE, define it but seemed that it's useless now. 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_request_a9bf9e694beed6b73dd9eaf3f3a73708b}{
+\index{Request@{Request}!FLOOR\_\-NONE@{FLOOR\_\-NONE}}
+\index{FLOOR\_\-NONE@{FLOOR\_\-NONE}!Request@{Request}}
+\subsubsection[{FLOOR\_\-NONE}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf Request::FLOOR\_\-NONE} = -\/1\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_request_a9bf9e694beed6b73dd9eaf3f3a73708b}
+Value for a floor number hich means unavaliable 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+request.h\end{DoxyCompactItemize}

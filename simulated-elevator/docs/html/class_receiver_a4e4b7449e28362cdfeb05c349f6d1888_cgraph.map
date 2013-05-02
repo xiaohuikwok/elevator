@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_receiver.html#a48b94424274f0d0fc2a3bbee87aaa25c" title="Receiver::readClient" alt="" coords="261,59,408,88"/>
+<area shape="rect" id="node5" href="$class_request.html#a7199b71072973cac67be00225bd9ce5b" title="Request::getDeparture" alt="" coords="492,5,649,35"/>
+<area shape="rect" id="node7" href="$class_request.html#af8586495f2fd5dce9fc5690d47f59310" title="Request::getDestination" alt="" coords="488,59,653,88"/>
+<area shape="rect" id="node9" href="$class_receiver.html#a1d7579bc5666c14449f5986d6fd26e7d" title="Receiver::signalRequestReceived" alt="" coords="457,112,684,141"/>
+</map>

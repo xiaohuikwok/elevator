@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_dispatcher.html#a5472cf1335843f5fa4655519b0e0bd94" title="Dispatcher::dispatchRequestPool" alt="" coords="228,244,449,273"/>
+<area shape="rect" id="node35" href="$class_elevator.html#aca5f48d0086a5791d6fa822c4efc4d96" title="Elevator::getID" alt="" coords="284,297,393,327"/>
+<area shape="rect" id="node5" href="$class_elevator.html#aaef88b9050a598bfc711e0f4a55711d0" title="Elevator::addRequest" alt="" coords="500,299,652,328"/>
+<area shape="rect" id="node23" href="$class_elevator.html#a2e9a499fe4d2b2ccff043d3798399743" title="Elevator::evaluate" alt="" coords="511,165,641,195"/>
+<area shape="rect" id="node7" href="$class_request.html#af75b4fec08458a4fe539d679d87ac8c4" title="Request::getDirection" alt="" coords="771,272,923,301"/>
+<area shape="rect" id="node9" href="$class_request.html#a7a435c886ed19acb556dc2445a53bd37" title="Request::getDirectionToDeparture" alt="" coords="732,219,961,248"/>
+<area shape="rect" id="node11" href="$class_elevator.html#a64dc8a888c4ae8914a2ce640b3104c39" title="Elevator::isIdle" alt="" coords="1101,296,1211,325"/>
+<area shape="rect" id="node13" href="$class_elevator.html#a5d4ecef44a3e87b14b5ce8de10008fdd" title="Elevator::nextFloor" alt="" coords="780,376,913,405"/>
+<area shape="rect" id="node18" href="$class_elevator.html#ad854f6f6fa0d4c8b6066edc1282fced3" title="Elevator::setCurDirection" alt="" coords="1071,456,1241,485"/>
+<area shape="rect" id="node15" href="$class_elevator.html#ac9f33c34d59902f14c72bc86c6c3edb7" title="Elevator::action" alt="" coords="1099,349,1213,379"/>
+<area shape="rect" id="node20" href="$class_elevator.html#a688a7f343cc5d4ceec45feea140ccba2" title="Elevator::signalCanAcceptRequest" alt="" coords="1041,403,1271,432"/>
+<area shape="rect" id="node25" href="$class_request.html#a7199b71072973cac67be00225bd9ce5b" title="Request::getDeparture" alt="" coords="768,165,925,195"/>
+<area shape="rect" id="node27" href="$class_request.html#af8586495f2fd5dce9fc5690d47f59310" title="Request::getDestination" alt="" coords="764,5,929,35"/>
+<area shape="rect" id="node31" href="$class_request.html#a78b24de8cdef27ff340b28d49d251720" title="Request::getLength" alt="" coords="777,59,916,88"/>
+<area shape="rect" id="node33" href="$class_elevator.html#abd54853d9aba7177792df167c0bb894c" title="Elevator::getPoleDepartureInCurrentDirection" alt="" coords="701,112,992,141"/>
+</map>

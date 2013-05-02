@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><title></title>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="search.css"/>
+<script type="text/javascript" src="search.js"></script>
+</head>
+<body class="SRPage">
+<div id="SRIndex">
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRResult" id="SR_departure">
+ <div class="SREntry">
+  <a id="Item0" onkeydown="return searchResults.Nav(event,0)" onkeypress="return searchResults.Nav(event,0)" onkeyup="return searchResults.Nav(event,0)" class="SRSymbol" href="../class_request.html#a485c04f740b2b104773e7a562490daa9" target="_parent">departure</a>
+  <span class="SRScope">Request</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_destination">
+ <div class="SREntry">
+  <a id="Item1" onkeydown="return searchResults.Nav(event,1)" onkeypress="return searchResults.Nav(event,1)" onkeyup="return searchResults.Nav(event,1)" class="SRSymbol" href="../class_request.html#a4f515d80c8c978b213af816b54598497" target="_parent">destination</a>
+  <span class="SRScope">Request</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_direction">
+ <div class="SREntry">
+  <a id="Item2" onkeydown="return searchResults.Nav(event,2)" onkeypress="return searchResults.Nav(event,2)" onkeyup="return searchResults.Nav(event,2)" class="SRSymbol" href="javascript:searchResults.Toggle('SR_direction')">DIRECTION</a>
+  <div class="SRChildren">
+    <a id="Item2_c0" onkeydown="return searchResults.NavChild(event,2,0)" onkeypress="return searchResults.NavChild(event,2,0)" onkeyup="return searchResults.NavChild(event,2,0)" class="SRScope" href="../class_request.html#a31872cb7919df688dc6866ea607b9d9d" target="_parent">Request::DIRECTION()</a>
+    <a id="Item2_c1" onkeydown="return searchResults.NavChild(event,2,1)" onkeypress="return searchResults.NavChild(event,2,1)" onkeyup="return searchResults.NavChild(event,2,1)" class="SRScope" href="../class_elevator.html#a0e5685fa3ebcfb3c5e4810adc6c5388a" target="_parent">Elevator::direction()</a>
+  </div>
+ </div>
+</div>
+<div class="SRResult" id="SR_dispatcher">
+ <div class="SREntry">
+  <a id="Item3" onkeydown="return searchResults.Nav(event,3)" onkeypress="return searchResults.Nav(event,3)" onkeyup="return searchResults.Nav(event,3)" class="SRSymbol" href="javascript:searchResults.Toggle('SR_dispatcher')">Dispatcher</a>
+  <div class="SRChildren">
+    <a id="Item3_c0" onkeydown="return searchResults.NavChild(event,3,0)" onkeypress="return searchResults.NavChild(event,3,0)" onkeyup="return searchResults.NavChild(event,3,0)" class="SRScope" href="../class_dispatcher.html" target="_parent">Dispatcher</a>
+    <a id="Item3_c1" onkeydown="return searchResults.NavChild(event,3,1)" onkeypress="return searchResults.NavChild(event,3,1)" onkeyup="return searchResults.NavChild(event,3,1)" class="SRScope" href="../class_dispatcher.html#aa97cd04e05de526ce5d7f5bdba572f23" target="_parent">Dispatcher::Dispatcher()</a>
+    <a id="Item3_c2" onkeydown="return searchResults.NavChild(event,3,2)" onkeypress="return searchResults.NavChild(event,3,2)" onkeyup="return searchResults.NavChild(event,3,2)" class="SRScope" href="../class_main_window.html#ab3d26981023f4d64c8fab3faeb0743b1" target="_parent">MainWindow::dispatcher()</a>
+  </div>
+ </div>
+</div>
+<div class="SRResult" id="SR_dispatchrequestpool">
+ <div class="SREntry">
+  <a id="Item4" onkeydown="return searchResults.Nav(event,4)" onkeypress="return searchResults.Nav(event,4)" onkeyup="return searchResults.Nav(event,4)" class="SRSymbol" href="../class_dispatcher.html#a5472cf1335843f5fa4655519b0e0bd94" target="_parent">dispatchRequestPool</a>
+  <span class="SRScope">Dispatcher</span>
+ </div>
+</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+<script type="text/javascript"><!--
+document.getElementById("Loading").style.display="none";
+document.getElementById("NoMatches").style.display="none";
+var searchResults = new SearchResults("searchResults");
+searchResults.Search();
+--></script>
+</div>
+</body>
+</html>

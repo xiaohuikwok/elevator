@@ -1,0 +1,15 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_elevator.html#aaef88b9050a598bfc711e0f4a55711d0" title="Elevator::addRequest" alt="" coords="279,299,431,328"/>
+<area shape="rect" id="node21" href="$class_elevator.html#a2e9a499fe4d2b2ccff043d3798399743" title="Elevator::evaluate" alt="" coords="289,165,420,195"/>
+<area shape="rect" id="node5" href="$class_request.html#af75b4fec08458a4fe539d679d87ac8c4" title="Request::getDirection" alt="" coords="549,272,701,301"/>
+<area shape="rect" id="node7" href="$class_request.html#a7a435c886ed19acb556dc2445a53bd37" title="Request::getDirectionToDeparture" alt="" coords="511,219,740,248"/>
+<area shape="rect" id="node9" href="$class_elevator.html#a64dc8a888c4ae8914a2ce640b3104c39" title="Elevator::isIdle" alt="" coords="880,296,989,325"/>
+<area shape="rect" id="node11" href="$class_elevator.html#a5d4ecef44a3e87b14b5ce8de10008fdd" title="Elevator::nextFloor" alt="" coords="559,376,692,405"/>
+<area shape="rect" id="node16" href="$class_elevator.html#ad854f6f6fa0d4c8b6066edc1282fced3" title="Elevator::setCurDirection" alt="" coords="849,456,1020,485"/>
+<area shape="rect" id="node13" href="$class_elevator.html#ac9f33c34d59902f14c72bc86c6c3edb7" title="Elevator::action" alt="" coords="877,349,992,379"/>
+<area shape="rect" id="node18" href="$class_elevator.html#a688a7f343cc5d4ceec45feea140ccba2" title="Elevator::signalCanAcceptRequest" alt="" coords="820,403,1049,432"/>
+<area shape="rect" id="node23" href="$class_request.html#a7199b71072973cac67be00225bd9ce5b" title="Request::getDeparture" alt="" coords="547,165,704,195"/>
+<area shape="rect" id="node25" href="$class_request.html#af8586495f2fd5dce9fc5690d47f59310" title="Request::getDestination" alt="" coords="543,5,708,35"/>
+<area shape="rect" id="node29" href="$class_request.html#a78b24de8cdef27ff340b28d49d251720" title="Request::getLength" alt="" coords="556,59,695,88"/>
+<area shape="rect" id="node31" href="$class_elevator.html#abd54853d9aba7177792df167c0bb894c" title="Elevator::getPoleDepartureInCurrentDirection" alt="" coords="480,112,771,141"/>
+</map>

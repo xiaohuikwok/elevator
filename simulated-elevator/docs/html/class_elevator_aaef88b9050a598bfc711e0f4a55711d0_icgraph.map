@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_dispatcher.html#a5472cf1335843f5fa4655519b0e0bd94" title="Dispatcher::dispatchRequestPool" alt="" coords="209,32,431,61"/>
+<area shape="rect" id="node5" href="$class_dispatcher.html#a5fd444604d8eadaafac5791f9947f021" title="Dispatcher::requestReceived" alt="" coords="480,5,677,35"/>
+<area shape="rect" id="node7" href="$class_dispatcher.html#a95437a6831a0f727a64d8490cf65a49f" title="Dispatcher::takeInControl" alt="" coords="492,59,665,88"/>
+<area shape="rect" id="node9" href="$class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db" title="MainWindow::MainWindow" alt="" coords="725,59,912,88"/>
+</map>

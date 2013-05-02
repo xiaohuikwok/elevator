@@ -1,0 +1,71 @@
+\hypertarget{class_main_window}{
+\section{MainWindow Class Reference}
+\label{class_main_window}\index{MainWindow@{MainWindow}}
+}
+
+
+{\ttfamily \#include $<$mainwindow.h$>$}
+
+
+
+Collaboration diagram for MainWindow:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_main_window__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{MainWindow} (QWidget $\ast$parent=0)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_main_window_a49a4cc5b54e6219a3184e835d55ea15b}{
+Ui::SimElevators \hyperlink{class_main_window_a49a4cc5b54e6219a3184e835d55ea15b}{ui}}
+\label{class_main_window_a49a4cc5b54e6219a3184e835d55ea15b}
+
+\begin{DoxyCompactList}\small\item\em Qt UI object. \end{DoxyCompactList}\item 
+\hypertarget{class_main_window_ab3d26981023f4d64c8fab3faeb0743b1}{
+\hyperlink{class_dispatcher}{Dispatcher} $\ast$ \hyperlink{class_main_window_ab3d26981023f4d64c8fab3faeb0743b1}{dispatcher}}
+\label{class_main_window_ab3d26981023f4d64c8fab3faeb0743b1}
+
+\begin{DoxyCompactList}\small\item\em Request-\/Dispatcher object. \end{DoxyCompactList}\item 
+\hypertarget{class_main_window_a7c9432520c16d148bd426e93b8c86383}{
+\hyperlink{class_receiver}{Receiver} $\ast$ \hyperlink{class_main_window_a7c9432520c16d148bd426e93b8c86383}{reciever}}
+\label{class_main_window_a7c9432520c16d148bd426e93b8c86383}
+
+\begin{DoxyCompactList}\small\item\em Request-\/Receiver object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main Window Class 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\subsubsection[{MainWindow}]{\setlength{\rightskip}{0pt plus 5cm}MainWindow::MainWindow (
+\begin{DoxyParamCaption}
+\item[{QWidget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, explicit\mbox{]}}}}
+\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}
+Constructor for Main Window. Initialize a \hyperlink{class_dispatcher}{Dispatcher} and Reciever. Have all the \hyperlink{class_elevator}{Elevator} widgets on ui connected to \hyperlink{class_dispatcher}{Dispatcher}. Connect the Reciever to \hyperlink{class_dispatcher}{Dispatcher}. 
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+mainwindow.h\end{DoxyCompactItemize}

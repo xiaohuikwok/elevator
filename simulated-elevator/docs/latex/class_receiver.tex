@@ -1,0 +1,137 @@
+\hypertarget{class_receiver}{
+\section{Receiver Class Reference}
+\label{class_receiver}\index{Receiver@{Receiver}}
+}
+
+
+{\ttfamily \#include $<$receiver.h$>$}
+
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_receiver_a1d7579bc5666c14449f5986d6fd26e7d}{signalRequestReceived} (\hyperlink{class_request}{Request} $\ast$req)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_receiver_af9c313fb6638894c3e31f6ed93684728}{Receiver} (QObject $\ast$parent=0)
+\item 
+void \hyperlink{class_receiver_a4e4b7449e28362cdfeb05c349f6d1888}{incomingConnection} (int socket)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{class_receiver_a9960b604c1574e1d5876aeef979addfd}{UPPER\_\-FLOOR} = 50
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_receiver_a48b94424274f0d0fc2a3bbee87aaa25c}{readClient} ()
+\item 
+\hypertarget{class_receiver_a0a7a8e1194211358e027e3ada7cfdb36}{
+void {\bfseries discardClient} ()}
+\label{class_receiver_a0a7a8e1194211358e027e3ada7cfdb36}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_receiver}{Receiver} Object Run in HTTP Server Mode, Listen for requests on port 8369 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_receiver_af9c313fb6638894c3e31f6ed93684728}{
+\index{Receiver@{Receiver}!Receiver@{Receiver}}
+\index{Receiver@{Receiver}!Receiver@{Receiver}}
+\subsubsection[{Receiver}]{\setlength{\rightskip}{0pt plus 5cm}Receiver::Receiver (
+\begin{DoxyParamCaption}
+\item[{QObject $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_receiver_af9c313fb6638894c3e31f6ed93684728}
+Start the listening of the HTTP server, if port is taken no error will be reported. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_receiver_a4e4b7449e28362cdfeb05c349f6d1888}{
+\index{Receiver@{Receiver}!incomingConnection@{incomingConnection}}
+\index{incomingConnection@{incomingConnection}!Receiver@{Receiver}}
+\subsubsection[{incomingConnection}]{\setlength{\rightskip}{0pt plus 5cm}void Receiver::incomingConnection (
+\begin{DoxyParamCaption}
+\item[{int}]{socket}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_receiver_a4e4b7449e28362cdfeb05c349f6d1888}
+Function triggered when a connection request is in. Accept the connection and forward it to the slot readClient. 
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_receiver_a4e4b7449e28362cdfeb05c349f6d1888_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_receiver_a48b94424274f0d0fc2a3bbee87aaa25c}{
+\index{Receiver@{Receiver}!readClient@{readClient}}
+\index{readClient@{readClient}!Receiver@{Receiver}}
+\subsubsection[{readClient}]{\setlength{\rightskip}{0pt plus 5cm}void Receiver::readClient (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private, slot\mbox{]}}}}
+\label{class_receiver_a48b94424274f0d0fc2a3bbee87aaa25c}
+Slot to parse the received data to request and return message for client. 
+
+Here is the call graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=398pt]{class_receiver_a48b94424274f0d0fc2a3bbee87aaa25c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=382pt]{class_receiver_a48b94424274f0d0fc2a3bbee87aaa25c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_receiver_a1d7579bc5666c14449f5986d6fd26e7d}{
+\index{Receiver@{Receiver}!signalRequestReceived@{signalRequestReceived}}
+\index{signalRequestReceived@{signalRequestReceived}!Receiver@{Receiver}}
+\subsubsection[{signalRequestReceived}]{\setlength{\rightskip}{0pt plus 5cm}void Receiver::signalRequestReceived (
+\begin{DoxyParamCaption}
+\item[{{\bf Request} $\ast$}]{req}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}signal\mbox{]}}}}
+\label{class_receiver_a1d7579bc5666c14449f5986d6fd26e7d}
+Function triggered when an avaliable is received. 
+
+Here is the caller graph for this function:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_receiver_a1d7579bc5666c14449f5986d6fd26e7d_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_receiver_a9960b604c1574e1d5876aeef979addfd}{
+\index{Receiver@{Receiver}!UPPER\_\-FLOOR@{UPPER\_\-FLOOR}}
+\index{UPPER\_\-FLOOR@{UPPER\_\-FLOOR}!Receiver@{Receiver}}
+\subsubsection[{UPPER\_\-FLOOR}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf Receiver::UPPER\_\-FLOOR} = 50\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{class_receiver_a9960b604c1574e1d5876aeef979addfd}
+Maxmum floor The request may reach 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+receiver.h\end{DoxyCompactItemize}

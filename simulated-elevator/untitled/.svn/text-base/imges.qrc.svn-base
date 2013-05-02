@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/n">
+        <file>images/huochaiman.png</file>
+        <file>images/Screenshot-2.png</file>
+        <file>images/huochaiman.jpg</file>
+        <file>images/Screenshot-2.jpg</file>
+        <file>images/100530191419941423961d2719.jpg</file>
+        <file>images/elevator.png</file>
+        <file>images/real.png</file>
+        <file>images/sub.jpg</file>
+        <file>images/arrow_down_2.png</file>
+        <file>images/arrow_up.png</file>
+        <file>images/subleft.jpg</file>
+        <file>images/subright.jpg</file>
+        <file>images/电梯.png</file>
+        <file>sound/1.wav</file>
+    </qresource>
+</RCC>
